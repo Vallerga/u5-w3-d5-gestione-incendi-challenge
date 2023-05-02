@@ -4,7 +4,7 @@ import com.design_pattern.controllo_gestione_incendi.gestione_sonda.Subject;
 
 public class Sonda extends Subject {
 	
-	public final int VALORE_CRITICO = 6;
+	public final int VALORE_CRITICO = 5;
 	
 	private int id;
 	private double latitudine;
@@ -52,7 +52,7 @@ public class Sonda extends Subject {
 	}
 	
 	public void controlloLivelloFumo(int livFum) {
-		if (livelloFumo >= VALORE_CRITICO) {
+		if (livelloFumo > VALORE_CRITICO) {
 			super.notificaObservers();
 		}
 	}

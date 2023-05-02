@@ -74,19 +74,19 @@ public class CentroControllo {
 		
 		// controllo se valori fumo sopra soglia ed eventualmente aggiorno valori
 		if (sondaGenova.getLivelloFumo() > sondaGenova.VALORE_CRITICO) {
-			controlloSondaRoma.aggiorna(sondaRoma);
+			controlloSondaRoma.aggiorna(sondaGenova);
 		}
 		
 		if (sondaNapoli.getLivelloFumo() > sondaNapoli.VALORE_CRITICO) {
-			controlloSondaRoma.aggiorna(sondaRoma);
+			controlloSondaRoma.aggiorna(sondaNapoli);
 		}
 		
 		if (sondaMilano.getLivelloFumo() > sondaMilano.VALORE_CRITICO) {
-			controlloSondaRoma.aggiorna(sondaRoma);
+			controlloSondaRoma.aggiorna(sondaMilano);
 		}
 		
 		if (sondaVenezia.getLivelloFumo() > sondaVenezia.VALORE_CRITICO) {
-			controlloSondaRoma.aggiorna(sondaRoma);
+			controlloSondaRoma.aggiorna(sondaVenezia);
 		}
 		
 		if (sondaRoma.getLivelloFumo() > sondaRoma.VALORE_CRITICO) {
@@ -94,7 +94,7 @@ public class CentroControllo {
 		}
 		
 		if (sondaPalermo.getLivelloFumo() > sondaPalermo.VALORE_CRITICO) {
-			controlloSondaMilano.aggiorna(sondaMilano);
+			controlloSondaMilano.aggiorna(sondaPalermo);
 		}
 	}
 }
